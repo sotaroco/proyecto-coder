@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*-----------RESET------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Open Sans", sans-serif !important;
+}
+
+
+/*-----------HEADER------------*/
+
+
+header nav img {
+    width: 120px;
+}
+
+.menu {
+    background-color: #060707;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+
+}
+
+/*-----------MAIN------------*/
+
+body {
+    padding-top: 85px;
+}
+
+/*? index */
+
+main {
+    background-color: #060707;
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/fondodegradado.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+.hero h1 {
+    width: 70%;
+    color: white;
+    font-size: 70px;
+}
+
+.hero p {
+    width: 53%;
+    color: rgba(255, 255, 255, 0.966);
+    font-size: 21px;
+    font-weight: 200;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.boton {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px rgba(255, 255, 255, 0.867) solid;
+    border-radius: 30px;
+    padding: 8px 20px 8px 20px;
+}
+
+.boton:hover {
+    background-color: white;
+    color: black;
+}
+
+.boton-secundario {
+    background-color: rgba(255, 255, 255, 0.782);
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px rgba(255, 255, 255, 0.91) solid;
+    color: rgba(0, 0, 0, 0.913);
+    margin: 5px;
+    border-radius: 30px;
+    padding: 8px 20px 8px 20px;
+}
+
+.boton-secundario:hover {
+    background-color: #58A957;
+    border: 1px #58A957 solid;
+}
+
+.workflow {
+    width: 100%;
+    height: 1250px;
+}
+
+.workflow div {
+    width: 100%;
+    height: 280px;
+    padding: 50px;
+}
+
+.workflow h2 {
+    color: white;
+    font-size: 60px;
+    padding-top: 40px;
+}
+
+.workflow h3 {
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+    padding-bottom: 40px;
+}
+
+.workflow p {
+    color: white;
+    width: 50%;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.what-we-offer {
+    width: 100%;
+    height: 900px;
+}
+
+.what-we-offer p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.what-we-offer h2 {
+    color: white;
+    padding: 50px;
+    font-size: 60px;
+}
+
+.what-we-offer a {
+    margin-left: 40px;
+}
+
+.what-we-offer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.what-we-offer-container div {
+    color: white;
+    font-size: 20px;
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #442D72;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 150px;
+    right: 50px;
+}
+
+.fixed img {
+    width: 60px;
+    height: auto;
+}
+
+/*? work */
+
+.titulo h1 {
+    color: white;
+    font-size: 60px;
+    padding-left: 60px;
+}
+
+.grid-galeria {
+    width: 100%;
+    height: 1500px;
+    padding: 70px;
+    display: grid;
+    grid-auto-rows: 300px;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 140px;
+    column-gap: 6px;
+
+}
+
+.grid-galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-item {
+    font-size: 15px;
+    color: white;
+    position: relative;
+}
+
+.grid-item h3 {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.71);
+    color: black;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.grid-item h4 {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: white;
+}
+
+/*? suscription */
+
+.suscription h1 {
+    color: white;
+    font-size: 60px;
+    padding-left: 60px;
+}
+
+.suscription {
+    width: 100%;
+    height: 900px;
+}
+
+.suscription-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.suscription-container div {
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #58A957;
+    width: 370px;
+    height: 470px;
+    padding: 30px;
+    margin: 10px;
+}
+
+.suscription-container div ul {
+    margin-bottom: 30px;
+}
+
+/*? about us */
+
+.our-story {
+    height: 1000px;
+    padding-left: 60px;
+}
+
+.our-story h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.our-story p {
+    color: white;
+    font-size: 20px;
+    width: 60%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.our-story img {
+    width: 60%;
+}
+
+/*? contact */
+
+.contact-us {
+    height: 200px;
+}
+
+.contact-us h1 {
+    color: white;
+    font-size: 60px;
+    padding-left: 60px;
+}
+
+.formulario {
+    color: white;
+    padding: 40px;
+    height: 500px;
+}
+
+
+/*-----------FOOTER------------*/
+
+.grid-foot {
+    width: 100%;
+    padding: 40px;
+    display: grid;
+    grid-template-rows: 200px 50px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    padding: 60px;
+}
+
+.grid-item-foot ul {
+    display: flex;
+    justify-content: end;
+}
+
+.grid-item-foot ul li {
+    padding: 20px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: end;
+}
+
+footer {
+    background-image: url(../img/fondofooter.jpg);
+    height: 400px;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer img {
+    width: 120px;
+}
+
+footer div ul li {
+    color: white;
+    list-style: none;
+}
+
+footer div label {
+    color: white;
+}
+
+footer i {
+    font-size: 36px;
+    color: white;
+    padding: 10px;
+}
+
+footer i:hover {
+    color: #1D4A25;
+}
+
+.correo {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    line-height: 40px;
+    outline: none;
+    padding: 10px;
+}
+
+input:focus,
+input:valid {
+    color: white;
+}
+
+.hablar {
+    background: transparent;
+    border: none;
+}
+
+/*-----------MEDIA QUERIES------------*/
+
+
+@media (max-width: 1300px) {
+    .grid-galeria {
+        height: 2000px;
+        grid-template-columns: repeat(3, 1fr);
+    }    
+    .grid-item-foot ul {
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .grid-item-foot ul li {
+        padding: 8px;
+        text-align: right;
+    }
+
+    .workflow div p {
+        font-size: 22px;
+        width: 70%;
+    }
+}
+
+/*-----------------------*/
+
+@media (max-width: 1125px) {
+    .grid-galeria {
+        height: 2800px;
+        grid-template-columns: repeat(2, 1fr);
+    }    
+
+    .grid-item-foot ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .grid-item-foot ul li {
+        padding: 8px;
+        text-align: right;
+    }
+
+    .workflow div {
+        padding: 40px;
+    }
+    .workflow div p {
+        font-size: 22px;
+        width: 70%;
+    }
+}
+
+/*-----------------------*/
+
+@media (max-width: 996px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .hero p {
+        font-size: 25px;
+        width: 80%;
+    }
+    
+    .grid-galeria {
+        height: 2800px;
+        grid-auto-rows: 300px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 140px;
+        column-gap: 6px;
+    }    
+    .grid-item-foot ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .grid-item-foot ul li {
+        padding: 5px;
+        text-align: right;
+    }
+
+    .what-we-offer {
+        height: 1200px;
+    }
+    
+    .what-we-offer a {
+        margin-left: 250px;
+    }
+
+    .what-we-offer-container {
+        flex-direction: column;
+    }
+    
+    .what-we-offer-container div {
+        width: 500px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .workflow {
+        padding: 20px;
+    }
+
+    .workflow div p {
+        font-size: 22px;
+        width: 90%;
+    }
+
+    footer div ul li {
+        font-size: 18px;
+    }
+    
+    footer i {
+        font-size: 42px;
+        color: white;
+        padding: 12px;
+    }
+
+    .boton {
+        color: white;
+        font-size: 20px;
+        margin: 10px;
+    }
+    
+    .boton-secundario {
+        font-size: 20px;
+        margin: 10px;
+    }
+}
+
+/*-----------------------*/
+
+@media (max-width: 768px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    main {
+        height: 3400px;
+    }
+
+    .hero h1 {
+        width: 100%;
+        font-size: 62px;
+    }
+
+    .hero p {
+        font-size: 25px;
+        width: 80%;
+    }
+    
+    .grid-galeria {
+        height: 4800px;
+        grid-template-columns: 1fr;
+    }
+
+    .workflow div {
+        padding: 40px;
+    }
+
+    .workflow div p {
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .what-we-offer a {
+        margin-left: 90px;
+    }
+
+    .fixed {
+        position: fixed;
+        bottom: 190px;
+    }
+    
+    .fixed img {
+        width: 75px;
+        height: auto;
+    }
+    
+    .boton {
+        color: white;
+        font-size: 20px;
+        margin: 10px;
+    }
+    
+    .boton-secundario {
+        font-size: 20px;
+        margin: 10px;
+    }
+    
+    .grid-item-foot ul {
+        padding-top: 20px;
+    }
+
+    footer {
+        height: 600px;
+    }
+
+    footer div {
+        margin: 15px;
+    }
+
+    .grid-foot {
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div ul li {
+        font-size: 18px;
+    }
+    
+    footer i {
+        font-size: 44px;
+        color: white;
+        padding: 15px;
+    }
+}
+
+/*-----------------------*/
+
+@media (max-width: 576px) {
+    html, body, footer {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .hero h1 {
+        width: 100%;
+        font-size: 60px;
+    }
+
+    .hero p {
+        font-size: 25px;
+        width: 90%;
+    }
+    
+    .fixed {
+        position: fixed;
+        bottom: 160px;
+    }
+    
+    .fixed img {
+        width: 75px;
+        height: auto;
+    }
+    
+    .what-we-offer-container div {
+        width: 450px;
+        height: 240px;
+    }
+
+    .boton {
+        color: white;
+        font-size: 23px;
+    }
+    
+    .boton-secundario {
+        font-size: 23px;
+    }
+
+    .workflow h3 {
+        font-size: 48px;
+        padding-bottom: 20px;
+    }
+
+    .workflow div {
+        padding: 40px;
+        height: 280px;
+    }
+
+    .workflow p {
+        width: 100px;
+    }
+
+    footer div ul li {
+        font-size: 18px;
+    }
+    
+    footer i {
+        font-size: 44px;
+        color: white;
+        padding: 15px;
+    }
+
+}
+
+
