@@ -406,7 +406,7 @@ input:valid {
     }
         
     .grid-item-foot ul li {
-        padding: 8px;
+        padding: 5px;
         text-align: right;
     }
 
@@ -428,11 +428,6 @@ input:valid {
         display: flex;
         flex-direction: column;
     }
-    
-    .grid-item-foot ul li {
-        padding: 8px;
-        text-align: right;
-    }
 
     .workflow div {
         padding: 40px;
@@ -441,6 +436,11 @@ input:valid {
         font-size: 22px;
         width: 70%;
     }
+
+    .suscription {
+        height: 1400px;
+    }
+    
 }
 
 /*-----------------------*/
@@ -463,6 +463,7 @@ input:valid {
         row-gap: 140px;
         column-gap: 6px;
     }    
+
     .grid-item-foot ul {
         display: flex;
         flex-direction: column;
@@ -499,10 +500,6 @@ input:valid {
         font-size: 22px;
         width: 90%;
     }
-
-    footer div ul li {
-        font-size: 18px;
-    }
     
     footer i {
         font-size: 42px;
@@ -530,10 +527,6 @@ input:valid {
         overflow-x: hidden;
     }
 
-    main {
-        height: 3400px;
-    }
-
     .hero h1 {
         width: 100%;
         font-size: 62px;
@@ -545,7 +538,7 @@ input:valid {
     }
     
     .grid-galeria {
-        height: 4800px;
+        height: 5500px;
         grid-template-columns: 1fr;
     }
 
@@ -587,30 +580,57 @@ input:valid {
         padding-top: 20px;
     }
 
+    .suscription {
+        height: 1900px;
+    }
+    
+    .our-story {
+        height: 1000px;
+    }
+
+    .our-story p {
+        width: 90%;        
+    }
+
+    .our-story img {
+        width: 90%;
+    }
+
+    footer img {
+        width: 150px;
+    }
+
+    footer i {
+        font-size: 48px;
+        color: white;
+        padding: 15px;
+    }
+
     footer {
         height: 600px;
     }
 
-    footer div {
-        margin: 15px;
-    }
-
     .grid-foot {
-        width: 100%;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer div ul li {
-        font-size: 18px;
+        grid-template-rows: 100px;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
     }
     
-    footer i {
-        font-size: 44px;
-        color: white;
-        padding: 15px;
+    .grid-item-foot ul {
+        padding-left: 0;
+        padding-top: 50px;
     }
+    
+    .grid-item-foot ul li {
+        text-align: left;
+        font-size: 18px;
+        padding: 0;
+    }
+
+    .iconos {
+        justify-content: start;
+    }
+
 }
 
 /*-----------------------*/
@@ -668,16 +688,14 @@ input:valid {
         width: 100px;
     }
 
-    footer div ul li {
-        font-size: 18px;
-    }
-    
-    footer i {
-        font-size: 44px;
-        color: white;
-        padding: 15px;
+    .grid-galeria {
+        height: 5500px;
     }
 
+    .grid-foot {
+        row-gap: 20px;
+    }
+    
 }
 
 
