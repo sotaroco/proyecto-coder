@@ -1,0 +1,218 @@
+main {
+    background-color: #060707;
+    width: 100%;
+}
+
+/*?-------- INDEX -------*/
+
+.hero {
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/fondodegradado.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-left: 60px;
+    h1 {
+        width: 70%;
+        color: white;
+        font-size: 70px;
+    }
+    p {
+        width: 53%;
+        color: rgba(255, 255, 255, 0.966);
+        font-size: 21px;
+        font-weight: 200;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .boton-secundario {
+        background-color: rgba(255, 255, 255, 0.782);
+        text-decoration: none;
+        font-size: 16px;
+        border: 1px rgba(255, 255, 255, 0.91) solid;
+        color: rgba(0, 0, 0, 0.913);
+        margin: 5px;
+        border-radius: 30px;
+        padding: 8px 20px 8px 20px;
+        &:hover {
+            background-color: #58A957;
+            border: 1px #58A957 solid;
+        }    
+    }
+}
+
+.workflow {
+    width: 100%;
+    height: 1250px;
+    h2 {
+        color: white;
+        font-size: 60px;
+        padding: 40px;
+    }
+    div {
+        width: 100%;
+        height: 280px;
+        padding: 50px;
+        h3 {
+            color: white;
+            font-size: 50px;
+            font-weight: lighter;
+            padding-bottom: 40px;
+        }
+        p {
+            color: white;
+            width: 50%;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+    }
+}
+.what-we-offer {
+    width: 100%;
+    height: 900px;
+    h2 {
+        color: white;
+        padding: 50px;
+        font-size: 60px;
+    }
+    .what-we-offer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        div {
+            color: white;
+            font-size: 20px;
+            width: 400px;
+            height: 300px;
+            padding: 30px;
+            margin: 10px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            background-color: #442D72;
+            h3 {
+                color: white
+            }
+            p {
+                font-size: 18px;
+                font-weight: 200;
+            }
+        }
+    }
+    a {
+        margin-left: 40px;
+    }
+}
+
+/*?-------- WORK -------*/
+
+.grid-galeria {
+    width: 100%;
+    height: 1500px;
+    padding: 70px;
+    display: grid;
+    grid-auto-rows: 300px;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 140px;
+    column-gap: 6px;
+    .grid-item {
+        font-size: 15px;
+        color: white;
+        position: relative;
+        a {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        h3 {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.71);
+            color: black;
+            padding: 3px;
+            font-size: 15px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            h4 {
+                padding-top: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+/*?-------- SUSCRIPTIONS -------*/
+
+.suscription {
+    width: 100%;
+    height: 900px;
+    h1 {
+        color: white;
+        font-size: 60px;
+        padding-left: 60px;
+    }
+    .suscription-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        div {
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: #58A957;
+            width: 370px;
+            height: 470px;
+            padding: 30px;
+            margin: 10px;        
+            h2 {
+                font-size: 26px;
+            }
+            ul {
+                margin-bottom: 30px;
+                li {
+                    font-size: 18px;
+                }    
+            }
+        }
+    }
+}
+
+/*?-------- ABOUT US -------*/
+
+.our-story {
+    height: 1000px;
+    padding-left: 60px;
+    h1 {
+        color: white;
+        font-size: 60px;
+    }
+    p {
+        color: white;
+        font-size: 20px;
+        width: 60%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    img {
+        width: 60%;
+    }
+}
+
+/*?-------- CONTACT -------*/
+
+.formulario {
+    color: white;
+    padding: 40px;
+    height: 500px;
+}

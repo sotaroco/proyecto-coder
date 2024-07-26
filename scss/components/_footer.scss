@@ -1,0 +1,41 @@
+footer { 
+    width: 100%;
+    padding: 40px;
+    display: grid;
+    grid-template-rows: 200px 50px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    padding: 60px;
+    div {
+        h3 {
+            color: white;
+        }
+        ul {
+            display: flex;
+            justify-content: end;
+            li {     
+                padding: 20px;
+                color: white;
+                list-style: none;
+            }
+        }
+        img {
+            width: 120px;
+        }
+        label {
+            color: white;
+        }
+    }
+    .iconos {
+        display: flex;
+        justify-content: end;
+        i {
+            font-size: 36px;
+            color: white;
+            padding: 10px;
+            &:hover {
+                color: #1D4A25;
+            }
+        }
+    }
+}

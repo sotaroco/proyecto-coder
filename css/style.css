@@ -1,3 +1,5 @@
+/*--------TIPOGRAFIA---------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /*-----------RESET------------*/
@@ -6,13 +8,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
     font-family: "Open Sans", sans-serif !important;
 }
 
+body {
+    padding-top: 85px;
+}
 
 /*-----------HEADER------------*/
 
@@ -31,10 +35,6 @@ header nav img {
 }
 
 /*-----------MAIN------------*/
-
-body {
-    padding-top: 85px;
-}
 
 /*? index */
 
@@ -118,7 +118,7 @@ main {
 .workflow h2 {
     color: white;
     font-size: 60px;
-    padding-top: 40px;
+    padding: 40px;
 }
 
 .workflow h3 {
@@ -138,11 +138,6 @@ main {
 .what-we-offer {
     width: 100%;
     height: 900px;
-}
-
-.what-we-offer p {
-    font-size: 20px;
-    font-weight: 200;
 }
 
 .what-we-offer h2 {
@@ -174,6 +169,15 @@ main {
     background-color: #442D72;
 }
 
+.what-we-offer-container div p {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.what-we-offer-container div h3 {
+    color: white
+}
+
 .fixed {
     position: fixed;
     bottom: 150px;
@@ -187,7 +191,7 @@ main {
 
 /*? work */
 
-.titulo h1 {
+.titulo {
     color: white;
     font-size: 60px;
     padding-left: 60px;
@@ -202,10 +206,9 @@ main {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 140px;
     column-gap: 6px;
-
 }
 
-.grid-galeria div img {
+.grid-item a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -238,15 +241,15 @@ main {
 
 /*? suscription */
 
+.suscription {
+    width: 100%;
+    height: 900px;
+}
+
 .suscription h1 {
     color: white;
     font-size: 60px;
     padding-left: 60px;
-}
-
-.suscription {
-    width: 100%;
-    height: 900px;
 }
 
 .suscription-container {
@@ -270,6 +273,14 @@ main {
 
 .suscription-container div ul {
     margin-bottom: 30px;
+}
+
+.suscription-container div ul li {
+    font-size: 18px;
+}
+
+.suscription-container div h2 {
+    font-size: 26px;
 }
 
 /*? about us */
@@ -298,11 +309,7 @@ main {
 
 /*? contact */
 
-.contact-us {
-    height: 200px;
-}
-
-.contact-us h1 {
+.titulo {
     color: white;
     font-size: 60px;
     padding-left: 60px;
@@ -317,7 +324,7 @@ main {
 
 /*-----------FOOTER------------*/
 
-.grid-foot {
+footer {
     width: 100%;
     padding: 40px;
     display: grid;
@@ -325,15 +332,19 @@ main {
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
     padding: 60px;
+    background-image: url(../img/fondofooter.jpg);
+    height: 400px;
 }
 
-.grid-item-foot ul {
+footer div ul {
     display: flex;
     justify-content: end;
 }
 
-.grid-item-foot ul li {
+footer div ul li {
     padding: 20px;
+    color: white;
+    list-style: none;
 }
 
 .iconos {
@@ -341,22 +352,12 @@ main {
     justify-content: end;
 }
 
-footer {
-    background-image: url(../img/fondofooter.jpg);
-    height: 400px;
-}
-
 footer h3 {
     color: white;
 }
 
-footer img {
+footer div img {
     width: 120px;
-}
-
-footer div ul li {
-    color: white;
-    list-style: none;
 }
 
 footer div label {
@@ -400,12 +401,12 @@ input:valid {
         height: 2000px;
         grid-template-columns: repeat(3, 1fr);
     }    
-    .grid-item-foot ul {
+    footer div ul {
         display: flex;
         flex-direction: column;
     }
         
-    .grid-item-foot ul li {
+    footer div ul li {
         padding: 5px;
         text-align: right;
     }
@@ -424,7 +425,7 @@ input:valid {
         grid-template-columns: repeat(2, 1fr);
     }    
 
-    .grid-item-foot ul {
+    footer div ul {
         display: flex;
         flex-direction: column;
     }
@@ -464,16 +465,6 @@ input:valid {
         column-gap: 6px;
     }    
 
-    .grid-item-foot ul {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .grid-item-foot ul li {
-        padding: 5px;
-        text-align: right;
-    }
-
     .what-we-offer {
         height: 1200px;
     }
@@ -501,6 +492,16 @@ input:valid {
         width: 90%;
     }
     
+    footer div ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer div ul li {
+        padding: 5px;
+        text-align: right;
+    }
+
     footer i {
         font-size: 42px;
         color: white;
@@ -576,10 +577,6 @@ input:valid {
         margin: 10px;
     }
     
-    .grid-item-foot ul {
-        padding-top: 20px;
-    }
-
     .suscription {
         height: 1900px;
     }
@@ -600,7 +597,7 @@ input:valid {
         width: 150px;
     }
 
-    footer i {
+    footer div i {
         font-size: 48px;
         color: white;
         padding: 15px;
@@ -610,18 +607,18 @@ input:valid {
         height: 600px;
     }
 
-    .grid-foot {
+    footer {
         grid-template-rows: 100px;
         grid-template-columns: 1fr;
         row-gap: 10px;
     }
     
-    .grid-item-foot ul {
+    footer div ul {
         padding-left: 0;
         padding-top: 50px;
     }
     
-    .grid-item-foot ul li {
+    footer div ul li {
         text-align: left;
         font-size: 18px;
         padding: 0;
@@ -692,7 +689,7 @@ input:valid {
         height: 5500px;
     }
 
-    .grid-foot {
+    footer {
         row-gap: 20px;
     }
     
