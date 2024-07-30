@@ -30,8 +30,8 @@ main {
         padding-top: 20px;
         padding-bottom: 30px;
     }
-    .boton-secundario {
-        @extend %boton-secundario;
+    .boton {
+        @extend %boton; 
     }
 }
 .workflow {

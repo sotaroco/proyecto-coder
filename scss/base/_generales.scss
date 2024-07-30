@@ -23,6 +23,8 @@ $color-oscuro: #1D4A25;
 $font-size: 16px, 18px, 20px, 26px, 50px, 60px, 70px; 
 
 %boton {
+    width: 10%;
+    text-align: center;
     background-color: $color-principal;
     text-decoration: none;
     color: white;
@@ -34,22 +36,6 @@ $font-size: 16px, 18px, 20px, 26px, 50px, 60px, 70px;
     &:hover {
         background-color: white;
         color: $color-principal;
-    }  
-}
-
-%boton-secundario {
-    background-color: rgba(255, 255, 255, 0.782);
-    text-decoration: none;
-    font-size: 16px;
-    border: 1px rgba(255, 255, 255, 0.91) solid;
-    color: $color-principal;
-    margin: 5px;
-    border-radius: 30px;
-    padding: 8px 20px 8px 20px;
-    width: 130px;
-    &:hover {
-        background-color: $color-secundario;
-        border: 1px $color-secundario solid;
     }  
 }
 
@@ -80,5 +66,8 @@ $font-size: 16px, 18px, 20px, 26px, 50px, 60px, 70px;
     padding-left: 60px;
 }
 
+.boton {
+    @extend %boton;
+}
 
 

@@ -73,6 +73,8 @@ main {
 }
 
 .boton {
+    width: 10%;
+    text-align: center;
     background-color: black;
     text-decoration: none;
     color: white;
@@ -86,23 +88,6 @@ main {
 .boton:hover {
     background-color: white;
     color: black;
-}
-
-.boton-secundario {
-    background-color: rgba(255, 255, 255, 0.782);
-    text-decoration: none;
-    font-size: 16px;
-    border: 1px rgba(255, 255, 255, 0.91) solid;
-    color: rgba(0, 0, 0, 0.913);
-    margin: 5px;
-    border-radius: 30px;
-    padding: 8px 20px 8px 20px;
-    width: 130px;
-}
-
-.boton-secundario:hover {
-    background-color: #58A957;
-    border: 1px #58A957 solid;
 }
 
 .workflow {
@@ -508,18 +493,6 @@ input:valid {
         color: white;
         padding: 12px;
     }
-
-    .boton {
-        color: white;
-        font-size: 20px;
-        margin: 10px;
-    }
-    
-    .boton-secundario {
-        font-size: 20px;
-        margin: 10px;
-        width: 160px;
-    }
 }
 
 /*-----------------------*/
@@ -566,17 +539,6 @@ input:valid {
     .fixed img {
         width: 75px;
         height: auto;
-    }
-    
-    .boton {
-        color: white;
-        font-size: 20px;
-        margin: 10px;
-    }
-    
-    .boton-secundario {
-        font-size: 20px;
-        margin: 10px;
     }
     
     .suscription {
@@ -664,16 +626,6 @@ input:valid {
         height: 240px;
     }
 
-    .boton {
-        color: white;
-        font-size: 23px;
-    }
-    
-    .boton-secundario {
-        font-size: 23px;
-        width: 170px;
-    }
-s
     .workflow h3 {
         font-size: 48px;
         padding-bottom: 20px;

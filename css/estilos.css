@@ -10,7 +10,9 @@ body {
   font-family: "Open Sans", sans-serif !important; }
 
 /*---- VARIABLES LISTAS EXTEND MIXIN ----*/
-.what-we-offer .boton, .suscription .suscription-container div .boton {
+.boton, .hero .boton, .what-we-offer .boton, .suscription .suscription-container div .boton {
+  width: 10%;
+  text-align: center;
   background-color: #060707;
   text-decoration: none;
   color: white;
@@ -19,23 +21,9 @@ body {
   border: 1px rgba(255, 255, 255, 0.867) solid;
   border-radius: 30px;
   padding: 8px 20px 8px 20px; }
-  .what-we-offer .boton:hover, .suscription .suscription-container div .boton:hover {
+  .boton:hover, .suscription .suscription-container div .boton:hover {
     background-color: white;
     color: #060707; }
-
-.hero .boton-secundario {
-  background-color: rgba(255, 255, 255, 0.782);
-  text-decoration: none;
-  font-size: 16px;
-  border: 1px rgba(255, 255, 255, 0.91) solid;
-  color: #060707;
-  margin: 5px;
-  border-radius: 30px;
-  padding: 8px 20px 8px 20px;
-  width: 130px; }
-  .hero .boton-secundario:hover {
-    background-color: #58A957;
-    border: 1px #58A957 solid; }
 
 /*-----------INDEX------------*/
 .fixed {
@@ -329,15 +317,7 @@ footer {
   footer div i {
     font-size: 42px;
     color: white;
-    padding: 12px; }
-  .boton {
-    color: white;
-    font-size: 20px;
-    margin: 10px; }
-  .boton-secundario {
-    font-size: 20px;
-    margin: 10px;
-    width: 160px; } }
+    padding: 12px; } }
 
 /*-----------------------*/
 @media (max-width: 768px) {
@@ -366,13 +346,6 @@ footer {
     .fixed img {
       width: 75px;
       height: auto; }
-  .boton {
-    color: white;
-    font-size: 20px;
-    margin: 10px; }
-  .boton-secundario {
-    font-size: 20px;
-    margin: 10px; }
   .suscription {
     height: 1900px; }
   .our-story {
@@ -422,12 +395,6 @@ footer {
   .what-we-offer-container div {
     width: 450px;
     height: 240px; }
-  .boton {
-    color: white;
-    font-size: 23px; }
-  .boton-secundario {
-    font-size: 23px;
-    width: 170px; }
   .workflow div {
     padding: 40px;
     height: 350px; }
