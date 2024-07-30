@@ -1,0 +1,281 @@
+/*-----------MEDIA QUERIES------------*/
+
+
+@media (max-width: 1300px) {
+    .grid-galeria {
+        height: 2000px;
+        grid-template-columns: repeat(3, 1fr);
+    }    
+    .workflow {
+        div {
+            p {
+                font-size: 22px;
+                width: 70%;
+            }
+        }
+    }
+    footer {
+        div {
+            ul {
+                display: flex;
+                flex-direction: column;
+                li { 
+                    padding: 5px;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+/*-----------------------*/
+
+@media (max-width: 1125px) {
+    .grid-galeria {
+        height: 2800px;
+        grid-template-columns: repeat(2, 1fr);
+    }    
+    .workflow {
+        div {
+            padding: 40px;
+            p {
+                font-size: 22px;
+                width: 70%;
+            }
+        }
+    }
+    .suscription {
+        height: 1400px;
+    }
+    footer {
+        div {
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }   
+}
+
+/*-----------------------*/
+
+@media (max-width: 996px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }    
+    .hero p {
+        font-size: 25px;
+        width: 80%;
+    }    
+    .grid-galeria {
+        height: 2800px;
+        grid-auto-rows: 300px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 140px;
+        column-gap: 6px;
+    }    
+    .what-we-offer {
+        height: 1200px;
+        .what-we-offer-container {
+            flex-direction: column;
+            div {
+                width: 500px;
+                height: 200px;
+                margin-bottom: 20px;
+            }
+        }
+        a {
+            margin-left: 250px;
+        }
+    }    
+    .workflow {
+        padding: 20px;
+        div {
+            p {
+                font-size: 22px;
+                width: 90%;
+            }
+        }
+    }
+    footer {
+        div {
+            ul {
+                display: flex;
+                flex-direction: column;
+                li {
+                    padding: 5px;
+                    text-align: right;
+                }
+            }
+            i {
+                font-size: 42px;
+                color: white;
+                padding: 12px;
+            }
+        }
+    }
+    .boton {
+        color: white;
+        font-size: 20px;
+        margin: 10px;
+    }    
+    .boton-secundario {
+        font-size: 20px;
+        margin: 10px;
+        width: 160px;
+    }
+}
+
+/*-----------------------*/
+
+@media (max-width: 768px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .hero {
+        h1 {
+            width: 100%;
+            font-size: 62px;
+        }
+        p {
+            font-size: 25px;
+            width: 80%;
+        }
+    }    
+    .grid-galeria {
+        height: 5500px;
+        grid-template-columns: 1fr;
+    }
+    .workflow {
+        div {
+            padding: 40px;
+            p {
+                font-size: 22px;
+                width: 100%;
+            }
+        }
+    }
+    .what-we-offer {
+        a {
+            margin-left: 90px;
+        }
+    }
+    .fixed {
+        position: fixed;
+        bottom: 190px;
+        img {
+            width: 75px;
+            height: auto;
+        }
+    }   
+    .boton {
+        color: white;
+        font-size: 20px;
+        margin: 10px;
+    }   
+    .boton-secundario {
+        font-size: 20px;
+        margin: 10px;
+    }   
+    .suscription {
+        height: 1900px;
+    }
+    .our-story {
+        height: 1000px;
+        p {
+            width: 90%; 
+        }
+        img {
+            width: 90%;
+        }
+    }
+    footer {
+        height: 600px;
+        grid-template-rows: 100px;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        div {
+            img {
+                width: 150px;
+            }
+            ul {
+                padding-left: 0;
+                padding-top: 50px;
+                li {
+                    text-align: left;
+                    font-size: 18px;
+                    padding: 0;
+                }
+            }
+        }
+        .iconos {
+                justify-content: start;
+            i {
+                font-size: 48px;
+                color: white;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+/*-----------------------*/
+
+@media (max-width: 576px) {
+    html, body, footer {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .hero {
+        h1 {
+            width: 100%;
+            font-size: 60px;
+        }
+        p {
+            font-size: 25px;
+            width: 90%;
+        }
+    }
+    .fixed {
+        position: fixed;
+        bottom: 160px;
+        img {
+            width: 75px;
+            height: auto;
+        }
+    }  
+    .what-we-offer-container div {
+        width: 450px;
+        height: 240px;
+    }
+    .boton {
+        color: white;
+        font-size: 23px;
+    }    
+    .boton-secundario {
+        font-size: 23px;
+        width: 170px;
+    }
+    .workflow {
+        div {
+            padding: 40px;
+            height: 350px;
+            h3 {
+                font-size: 48px;
+                padding-bottom: 20px;
+            }
+            p {
+                width: 100px;
+            }
+        }
+    }
+    .grid-galeria {
+        height: 5500px;
+    }
+    footer {
+        row-gap: 20px;
+    }    
+}
+

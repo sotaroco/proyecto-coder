@@ -3,11 +3,9 @@
 header nav img {
     width: 120px;
 }
-
 .menu {
-    background-color: #060707;
+    background-color: $color-principal;
 }
-
 .nav-link:hover {
     text-decoration: underline;
 }

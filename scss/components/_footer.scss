@@ -11,8 +11,7 @@ footer {
             color: white;
         }
         ul {
-            display: flex;
-            justify-content: end;
+            @include flex(flex, end, center);
             li {     
                 padding: 20px;
                 color: white;
@@ -27,14 +26,13 @@ footer {
         }
     }
     .iconos {
-        display: flex;
-        justify-content: end;
+        @include flex(flex, end, center);
         i {
             font-size: 36px;
             color: white;
             padding: 10px;
             &:hover {
-                color: #1D4A25;
+                color: $color-oscuro;
             }
         }
     }
