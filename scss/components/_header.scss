@@ -1,11 +1,29 @@
 /*-----------NAV------------*/
 
-header nav img {
-    width: 120px;
+header {
+    .menu {
+        background-color: $color-principal;
+    }
+    nav {
+        div {
+            div {
+                ul {
+                    .nav-link {
+                        &:hover {
+                            color: $color-terciario;
+                            text-decoration: underline;
+                            transition: all 0.4s;
+                        }
+                    }
+                }
+            }
+            a {
+                img {
+                    width: 120px;
+                }
+            }
+        }
+    }
 }
-.menu {
-    background-color: $color-principal;
-}
-.nav-link:hover {
-    text-decoration: underline;
-}
+
+

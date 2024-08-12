@@ -7,11 +7,12 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans", sans-serif !important; }
+  font-family: "Open Sans", sans-serif !important;
+  padding-top: 85px; }
 
 /*---- VARIABLES LISTAS EXTEND MIXIN ----*/
 .boton, .hero .boton, .what-we-offer .boton, .suscription .suscription-container div .boton {
-  width: 10%;
+  width: 150px;
   text-align: center;
   background-color: #060707;
   text-decoration: none;
@@ -20,10 +21,12 @@ body {
   margin: 5px;
   border: 1px rgba(255, 255, 255, 0.867) solid;
   border-radius: 30px;
-  padding: 8px 20px 8px 20px; }
+  padding: 8px 20px 8px 20px;
+  transition: all 0.4s; }
   .boton:hover, .suscription .suscription-container div .boton:hover {
     background-color: white;
-    color: #060707; }
+    color: #060707;
+    transform: scale(1.1); }
 
 /*-----------INDEX------------*/
 .fixed {
@@ -40,15 +43,33 @@ body {
   font-size: 60px;
   padding-left: 60px; }
 
-/*-----------NAV------------*/
-header nav img {
-  width: 120px; }
+.boton-chico {
+  width: 90px;
+  text-align: center;
+  background-color: #060707;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin: 5px;
+  border: 1px rgba(255, 255, 255, 0.867) solid;
+  border-radius: 30px;
+  padding: 8px 20px 8px 20px;
+  transition: all 0.4s; }
+  .boton-chico:hover {
+    background-color: white;
+    color: #060707; }
 
-.menu {
+/*-----------NAV------------*/
+header .menu {
   background-color: #060707; }
 
-.nav-link:hover {
-  text-decoration: underline; }
+header nav div div ul .nav-link:hover {
+  color: #442D72;
+  text-decoration: underline;
+  transition: all 0.4s; }
+
+header nav div a img {
+  width: 120px; }
 
 main {
   background-color: #060707;
@@ -65,19 +86,72 @@ main {
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
-  padding-left: 60px; }
+  padding-top: 60px; }
   .hero h1 {
     width: 70%;
     color: white;
-    font-size: 70px; }
+    font-size: 70px;
+    font-weight: bolder;
+    padding-left: 60px; }
   .hero p {
     width: 53%;
     color: rgba(255, 255, 255, 0.966);
     font-size: 20px;
     font-weight: 200;
     padding-top: 20px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    padding-left: 60px; }
+  .hero .boton {
+    margin-left: 60px; }
+  .hero .wrapper {
+    width: 100%;
+    max-width: 1500px;
+    margin-inline: auto;
+    position: relative;
+    height: 60px;
+    margin-top: 260px;
+    overflow: hidden;
+    display: flex; }
+    .hero .wrapper .item {
+      width: 150px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      font-size: 14px;
+      text-align: center;
+      padding: 5px;
+      border: 1px solid white;
+      border-radius: 30px;
+      color: rgba(255, 255, 255, 0.768);
+      position: absolute;
+      left: 100%;
+      animation-name: scrollleft;
+      animation-duration: 30s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-delay: -15s; }
+    .hero .wrapper .item1 {
+      animation-delay: calc(30s / 8 * (8 - 1) * -1); }
+    .hero .wrapper .item2 {
+      animation-delay: calc(30s / 8 * (8 - 2) * -1); }
+    .hero .wrapper .item3 {
+      animation-delay: calc(30s / 8 * (8 - 3) * -1); }
+    .hero .wrapper .item4 {
+      animation-delay: calc(30s / 8 * (8 - 4) * -1); }
+    .hero .wrapper .item5 {
+      animation-delay: calc(30s / 8 * (8 - 5) * -1); }
+    .hero .wrapper .item6 {
+      animation-delay: calc(30s / 8 * (8 - 6) * -1); }
+    .hero .wrapper .item7 {
+      animation-delay: calc(30s / 8 * (8 - 7) * -1); }
+    .hero .wrapper .item8 {
+      animation-delay: calc(30s / 8 * (8 - 8) * -1); }
+
+@keyframes scrollleft {
+  to {
+    left: -150px; } }
 
 .workflow {
   width: 100%;
@@ -86,6 +160,15 @@ main {
     color: white;
     font-size: 60px;
     padding: 40px; }
+  .workflow img {
+    width: 20%;
+    animation: rotation 8s infinite linear; }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
   .workflow div {
     width: 100%;
     height: 280px;
@@ -98,12 +181,12 @@ main {
     .workflow div p {
       color: white;
       width: 50%;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: lighter; }
 
 .what-we-offer {
   width: 100%;
-  height: 900px; }
+  height: 1200px; }
   .what-we-offer h2 {
     color: white;
     padding: 50px;
@@ -120,14 +203,18 @@ main {
       height: 300px;
       padding: 30px;
       margin: 10px;
-      margin-bottom: 40px;
       border-radius: 10px;
       background-color: #442D72; }
+      .what-we-offer .what-we-offer-container div:hover {
+        background-color: rgba(137, 43, 226, 0.745);
+        transition: all 0.4s; }
       .what-we-offer .what-we-offer-container div h3 {
         color: white; }
       .what-we-offer .what-we-offer-container div p {
         font-size: 18px;
         font-weight: 200; }
+      .what-we-offer .what-we-offer-container div img {
+        width: 25%; }
   .what-we-offer .boton {
     margin-left: 40px; }
 
@@ -177,17 +264,23 @@ main {
     align-items: center;
     flex-wrap: wrap;
     padding-top: 40px; }
+    .suscription .suscription-container .standard {
+      background-color: #58A957; }
+    .suscription .suscription-container .pro {
+      background-color: #1D4A25; }
+    .suscription .suscription-container .max {
+      background-color: #0d2111; }
     .suscription .suscription-container div {
       color: white;
       font-size: 20px;
       border-radius: 10px;
-      background-color: #58A957;
       width: 370px;
       height: 470px;
       padding: 30px;
       margin: 10px; }
       .suscription .suscription-container div h2 {
-        font-size: 26px; }
+        font-size: 26px;
+        text-decoration: underline; }
       .suscription .suscription-container div ul {
         margin-bottom: 30px; }
         .suscription .suscription-container div ul li {
@@ -222,7 +315,13 @@ footer {
   grid-template-rows: 200px 50px;
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
-  padding: 60px; }
+  padding: 60px;
+  background-image: url(../img/fondofooter.jpg); }
+  footer div .correo {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    line-height: 40px; }
   footer div h3 {
     color: white; }
   footer div ul {
@@ -265,6 +364,18 @@ footer {
 
 /*-----------------------*/
 @media (max-width: 1125px) {
+  .hero .wrapper {
+    max-width: 1125px; }
+    .hero .wrapper .item {
+      width: 130px;
+      height: 40px;
+      font-size: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  @keyframes scrollleft {
+    to {
+      left: -130px; } }
   .grid-galeria {
     height: 2800px;
     grid-template-columns: repeat(2, 1fr); }
@@ -273,6 +384,12 @@ footer {
     .workflow div p {
       font-size: 22px;
       width: 70%; }
+  .what-we-offer {
+    height: 1200px; }
+    .what-we-offer .what-we-offer-container div {
+      width: 500px;
+      height: 350px;
+      margin-bottom: 20px; }
   .suscription {
     height: 1400px; }
   footer div ul {
@@ -284,9 +401,22 @@ footer {
   html, body {
     width: 100%;
     overflow-x: hidden; }
+  .hero .wrapper {
+    max-width: 996px;
+    margin-top: 200px; }
+    .hero .wrapper .item {
+      width: 110px;
+      height: 35px;
+      font-size: 11px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .hero p {
     font-size: 25px;
     width: 80%; }
+  @keyframes scrollleft {
+    to {
+      left: -110px; } }
   .grid-galeria {
     height: 2800px;
     grid-auto-rows: 300px;
@@ -294,13 +424,15 @@ footer {
     row-gap: 140px;
     column-gap: 6px; }
   .what-we-offer {
-    height: 1200px; }
+    height: 2500px; }
     .what-we-offer .what-we-offer-container {
       flex-direction: column; }
       .what-we-offer .what-we-offer-container div {
-        width: 500px;
-        height: 200px;
+        width: 600px;
+        height: 300px;
         margin-bottom: 20px; }
+        .what-we-offer .what-we-offer-container div img {
+          width: 15%; }
     .what-we-offer a {
       margin-left: 250px; }
   .workflow {
@@ -324,20 +456,39 @@ footer {
   html, body {
     width: 100%;
     overflow-x: hidden; }
+  .hero .wrapper {
+    max-width: 768px; }
+    .hero .wrapper .item {
+      width: 86px;
+      height: 35px;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .hero h1 {
     width: 100%;
     font-size: 62px; }
   .hero p {
     font-size: 25px;
     width: 80%; }
+  @keyframes scrollleft {
+    to {
+      left: -100px; } }
   .grid-galeria {
     height: 5500px;
     grid-template-columns: 1fr; }
   .workflow div {
-    padding: 40px; }
+    padding: 40px;
+    margin-bottom: 40px; }
     .workflow div p {
       font-size: 22px;
       width: 100%; }
+  .what-we-offer .what-we-offer-container div {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 20px; }
+    .what-we-offer .what-we-offer-container div img {
+      width: 20%; }
   .what-we-offer a {
     margin-left: 90px; }
   .fixed {
@@ -380,6 +531,16 @@ footer {
   html, body, footer {
     width: 100%;
     overflow-x: hidden; }
+  .hero .wrapper {
+    max-width: 576px; }
+    .hero .wrapper .item {
+      width: 76px;
+      height: 35px;
+      padding: 3px;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .hero h1 {
     width: 100%;
     font-size: 60px; }
@@ -397,12 +558,12 @@ footer {
     height: 240px; }
   .workflow div {
     padding: 40px;
-    height: 350px; }
-    .workflow div h3 {
-      font-size: 48px;
-      padding-bottom: 20px; }
+    margin-bottom: 40px; }
     .workflow div p {
-      width: 100px; }
+      font-size: 22px;
+      width: 100%; }
+  .workflow img {
+    margin-left: 30px; }
   .grid-galeria {
     height: 5500px; }
   footer {

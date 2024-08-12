@@ -16,11 +16,12 @@ main {
     display: flex;
     flex-direction: column;
     padding-top: 60px;
-    padding-left: 60px;
     h1 {
         width: 70%;
         color: white;
         font-size: nth($font-size, 7);
+        font-weight: bolder;
+        padding-left: 60px;
     }
     p {
         width: 53%;
@@ -29,10 +30,72 @@ main {
         font-weight: 200;
         padding-top: 20px;
         padding-bottom: 30px;
+        padding-left: 60px;
     }
     .boton {
+        margin-left: 60px;
         @extend %boton; 
     }
+    .wrapper {
+        width: 100%;
+        max-width: 1500px;
+        margin-inline: auto;
+        position: relative;
+        height: 60px;
+        margin-top: 260px;
+        overflow: hidden;
+        display: flex;
+        .item {
+            width: 150px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            font-size: 14px;
+            text-align: center;
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 30px;
+            color: rgba(255, 255, 255, 0.768);
+            position: absolute;
+            left: 100%;
+            animation-name: scrollleft;
+            animation-duration: 30s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: -15s;
+        }
+        .item1 {
+            animation-delay: calc(30s / 8 * (8 - 1) * -1);
+        }
+        .item2 {
+            animation-delay: calc(30s / 8 * (8 - 2) * -1);
+        }
+        .item3 {
+            animation-delay: calc(30s / 8 * (8 - 3) * -1);
+        }
+        .item4 {
+            animation-delay: calc(30s / 8 * (8 - 4) * -1);
+        }
+        .item5 {
+            animation-delay: calc(30s / 8 * (8 - 5) * -1);
+        }
+        .item6 {
+            animation-delay: calc(30s / 8 * (8 - 6) * -1);
+        }
+        .item7 {
+            animation-delay: calc(30s / 8 * (8 - 7) * -1);
+        }
+        .item8 {
+            animation-delay: calc(30s / 8 * (8 - 8) * -1);
+        }
+    }
+}
+@keyframes scrollleft {
+    to {
+        left: -150px;
+    }    
 }
 .workflow {
     width: 100%;
@@ -41,6 +104,18 @@ main {
         color: white;
         font-size: nth($font-size, 6);
         padding: 40px;
+    }
+    img {
+        width: 20%;
+        animation: rotation 8s infinite linear;
+    }
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
     }
     div {
         width: 100%;
@@ -55,14 +130,14 @@ main {
         p {
             color: white;
             width: 50%;
-            font-size: nth($font-size, 1);
+            font-size: nth($font-size, 2);
             font-weight: lighter;
         }
     }
 }
 .what-we-offer {
     width: 100%;
-    height: 900px;
+    height: 1200px;
     h2 {
         color: white;
         padding: 50px;
@@ -78,15 +153,21 @@ main {
             height: 300px;
             padding: 30px;
             margin: 10px;
-            margin-bottom: 40px;
             border-radius: 10px;
             background-color: $color-terciario;
+            &:hover{
+                background-color: rgba(137, 43, 226, 0.745);
+                transition: all 0.4s;
+            }
             h3 {
                 color: white
             }
             p {
                 font-size: nth($font-size, 2);
                 font-weight: 200;
+            }
+            img {
+                width: 25%;
             }
         }
     }
@@ -151,17 +232,26 @@ main {
         @include flex(flex, center, center);
         flex-wrap: wrap;
         padding-top: 40px;
+        .standard{
+            background-color: $color-secundario;
+        }
+        .pro{
+            background-color: $color-oscuro;
+        }
+        .max{
+            background-color: #0d2111;
+        }
         div {
             color: white;
             font-size: nth($font-size, 3);
             border-radius: 10px;
-            background-color: $color-secundario;
             width: 370px;
             height: 470px;
             padding: 30px;
             margin: 10px;        
             h2 {
                 font-size: nth($font-size, 4);
+                text-decoration: underline;
             }
             ul {
                 margin-bottom: 30px;

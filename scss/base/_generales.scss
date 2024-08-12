@@ -11,6 +11,7 @@
 }
 body {
     font-family: "Open Sans", sans-serif !important;
+    padding-top: 85px;
 }
 
 /*---- VARIABLES LISTAS EXTEND MIXIN ----*/
@@ -23,7 +24,7 @@ $color-oscuro: #1D4A25;
 $font-size: 16px, 18px, 20px, 26px, 50px, 60px, 70px; 
 
 %boton {
-    width: 10%;
+    width: 150px;
     text-align: center;
     background-color: $color-principal;
     text-decoration: none;
@@ -33,9 +34,11 @@ $font-size: 16px, 18px, 20px, 26px, 50px, 60px, 70px;
     border: 1px rgba(255, 255, 255, 0.867) solid;
     border-radius: 30px;
     padding: 8px 20px 8px 20px;
+    transition: all 0.4s;
     &:hover {
         background-color: white;
         color: $color-principal;
+        transform: scale(1.1);
     }  
 }
 
@@ -70,4 +73,22 @@ $font-size: 16px, 18px, 20px, 26px, 50px, 60px, 70px;
     @extend %boton;
 }
 
+.boton-chico {
+    width: 90px;
+    text-align: center;
+    background-color: $color-principal;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px rgba(255, 255, 255, 0.867) solid;
+    border-radius: 30px;
+    padding: 8px 20px 8px 20px;
+    transition: all 0.4s;
+    &:hover {
+        background-color: white;
+        color: $color-principal;
+    }  
+
+}
 

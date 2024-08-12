@@ -31,6 +31,24 @@
 /*-----------------------*/
 
 @media (max-width: 1125px) {
+    .hero {
+        .wrapper {
+            max-width: 1125px;
+            .item {
+                width: 130px;
+                height: 40px;
+                font-size: 13px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    @keyframes scrollleft {
+        to {
+            left: -130px;
+        }    
+    }
     .grid-galeria {
         height: 2800px;
         grid-template-columns: repeat(2, 1fr);
@@ -41,6 +59,16 @@
             p {
                 font-size: 22px;
                 width: 70%;
+            }
+        }
+    }
+    .what-we-offer {
+        height: 1200px;
+        .what-we-offer-container {
+            div {
+                width: 500px;
+                height: 350px;
+                margin-bottom: 20px;
             }
         }
     }
@@ -64,10 +92,29 @@
         width: 100%;
         overflow-x: hidden;
     }    
-    .hero p {
-        font-size: 25px;
-        width: 80%;
-    }    
+    .hero {
+        .wrapper {
+            max-width: 996px;
+            margin-top: 200px;
+            .item {
+                width: 110px;
+                height: 35px;
+                font-size: 11px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        p {
+            font-size: 25px;
+            width: 80%;
+        }
+    }
+    @keyframes scrollleft {
+        to {
+            left: -110px;
+        }    
+    }  
     .grid-galeria {
         height: 2800px;
         grid-auto-rows: 300px;
@@ -76,13 +123,16 @@
         column-gap: 6px;
     }    
     .what-we-offer {
-        height: 1200px;
+        height: 2500px;
         .what-we-offer-container {
             flex-direction: column;
             div {
-                width: 500px;
-                height: 200px;
+                width: 600px;
+                height: 300px;
                 margin-bottom: 20px;
+                img {
+                    width: 15%;
+                }
             }
         }
         a {
@@ -125,6 +175,17 @@
         overflow-x: hidden;
     }
     .hero {
+        .wrapper {
+            max-width: 768px;
+            .item {
+                width: 86px;
+                height: 35px;
+                font-size: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
         h1 {
             width: 100%;
             font-size: 62px;
@@ -133,7 +194,12 @@
             font-size: 25px;
             width: 80%;
         }
-    }    
+    }   
+    @keyframes scrollleft {
+        to {
+            left: -100px;
+        }    
+    }  
     .grid-galeria {
         height: 5500px;
         grid-template-columns: 1fr;
@@ -141,6 +207,7 @@
     .workflow {
         div {
             padding: 40px;
+            margin-bottom: 40px;
             p {
                 font-size: 22px;
                 width: 100%;
@@ -148,10 +215,20 @@
         }
     }
     .what-we-offer {
+        .what-we-offer-container {
+            div {
+                width: 500px;
+                height: 300px;
+                margin-bottom: 20px;
+                img {
+                    width: 20%;
+                }
+            }
+        }
         a {
             margin-left: 90px;
         }
-    }
+    } 
     .fixed {
         position: fixed;
         bottom: 190px;
@@ -210,6 +287,18 @@
         overflow-x: hidden;
     }
     .hero {
+        .wrapper {
+            max-width: 576px;
+            .item {
+                width: 76px;
+                height: 35px;
+                padding: 3px;
+                font-size: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
         h1 {
             width: 100%;
             font-size: 60px;
@@ -234,16 +323,16 @@
     .workflow {
         div {
             padding: 40px;
-            height: 350px;
-            h3 {
-                font-size: 48px;
-                padding-bottom: 20px;
-            }
+            margin-bottom: 40px;
             p {
-                width: 100px;
+                font-size: 22px;
+                width: 100%;
             }
         }
-    }
+        img {
+            margin-left: 30px;
+        }
+    }    
     .grid-galeria {
         height: 5500px;
     }
